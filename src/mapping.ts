@@ -85,12 +85,12 @@ export function handleTransfer(event: Transfer): void {
         }
         all.numTokenContracts = all.numTokenContracts.plus(BigInt.fromI32(1));
 
-        let doAllAddressesOwnTheirIdByDefault = contract.try_doAllAddressesOwnTheirIdByDefault();
-        if(!doAllAddressesOwnTheirIdByDefault.reverted) {
-            tokenContract.doAllAddressesOwnTheirIdByDefault = doAllAddressesOwnTheirIdByDefault.value; // only set it at creation
-        } else {
-            tokenContract.doAllAddressesOwnTheirIdByDefault = false;
-        }
+        // let doAllAddressesOwnTheirIdByDefault = contract.try_doAllAddressesOwnTheirIdByDefault();
+        // if(!doAllAddressesOwnTheirIdByDefault.reverted) {
+        //     tokenContract.doAllAddressesOwnTheirIdByDefault = doAllAddressesOwnTheirIdByDefault.value; // only set it at creation
+        // } else {
+        //     tokenContract.doAllAddressesOwnTheirIdByDefault = false;
+        // }
     }
 
     if (from != zeroAddress || to != zeroAddress) { // skip if from zero to zero

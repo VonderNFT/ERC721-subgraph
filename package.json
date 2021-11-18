@@ -50,6 +50,8 @@
     "setup": "npm-run-all -l externals:down --parallel shell:externals local:setup",
     "dev": "npm-run-all -l externals:down --parallel externals local:setup:deploy",
     "shell:dev": "npm-run-all -l externals:down --parallel shell:externals local:setup:deploy",
-    "run:local": "cross-env BUIDLER_NETWORK=localhost node"
+    "run:local": "cross-env BUIDLER_NETWORK=localhost node",
+
+    
   }
 }

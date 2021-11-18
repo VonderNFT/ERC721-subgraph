@@ -5,3 +5,4 @@ artifacts/
 cache/
 deployments/localhost_*
 contracts.json
+build/
